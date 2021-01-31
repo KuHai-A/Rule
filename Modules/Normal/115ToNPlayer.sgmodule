@@ -1,0 +1,6 @@
+#!name=提取115中的视频使用nPlayer进行播放
+#!desc=https://github.com/ikanam/Surge-Scripts
+#!system=ios
+
+[Script]
+http-request ^https?:\/\/.*\.115\.com\/.*\.m3u8.*$ script-path=https://raw.githubusercontent.com/ikanam/Surge-Scripts/master/115tonplayer.js
