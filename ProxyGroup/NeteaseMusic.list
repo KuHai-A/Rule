@@ -1,11 +1,7 @@
-🎧𝐌𝐮𝐬𝐢𝐜𝟏 = http,106.52.127.72,19951
-🎧𝐌𝐮𝐬𝐢𝐜𝟐 = http,3music.poetyin.me,100
-🎧𝐌𝐮𝐬𝐢𝐜𝟑 = http,block4music.poetyin.me,39000
-🎧𝐌𝐮𝐬𝐢𝐜𝟒 = ss,blockmusic.poetyin.me,30003,encrypt-method=aes-128-gcm,password=desperadoj.com_free_proxy_x80j
-🎧𝐌𝐮𝐬𝐢𝐜𝟓 = ss,music.desperadoj.com,30001,encrypt-method=aes-128-gcm,password=desperadoj.com_free_proxy_emx2
-🎧𝐌𝐮𝐬𝐢𝐜𝟔 = ss,music.desperadoj.com,30003,encrypt-method=aes-128-gcm,password=desperadoj.com_free_proxy_emx2
-🎧𝐌𝐮𝐬𝐢𝐜𝟕 = ss,proxy.plusmedia.site,58080,encrypt-method=rc4-md5,password=ieG9l1nte5eo7IBZas84jLi
-🎧𝐌𝐮𝐬𝐢𝐜𝟖 = ss,proxy.plusmedia.site,58081,encrypt-method=rc4-md5,password=ieG9l1nte5eo7IBZas84jLi
-🎧𝐌𝐮𝐬𝐢𝐜9 = http,101.132.79.113,23333,tfo=false,udp-relay=false
-🎧𝐌𝐮𝐬𝐢𝐜10 = http,aimer.one,23333
-🎧𝐌𝐮𝐬𝐢𝐜11 = ss,music.desperadoj.com,30001,encrypt-method=aes-128-gcm,password=desperadoj.com_free_proxy_d39m,tfo=false,udp-relay=false
+网易云1 = http,101.132.79.113,23333,tfo=false,udp-relay=false
+网易云2 = http,aimer.one,23333
+网易云3 = ss,music.desperadoj.com,30001,encrypt-method=aes-128-gcm,password=desperadoj.com_free_proxy_d39m,tfo=false,udp-relay=false
+网易云4 = ss, MUSIC.DESPERADOJ.COM, 30001, encrypt-method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, tfo=false, udp-relay=false
+网易云5 = http, 43.129.249.180, 8848, tls=false
+网易云6 = http, 43.129.249.180, 8848, tls=false, tfo=false
+网易云7 = ss, MUSIC.DESPERADOJ.COM, 30003, encrypt-method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, tfo=false, udp-relay=false
