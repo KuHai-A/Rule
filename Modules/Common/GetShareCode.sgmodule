@@ -1,6 +1,0 @@
-#!name=获取互助码
-#!desc=获取互助码
-#!system=ios
-
-[Script]
-获取互助码 = type=cron,cronexp="20 13 * * 6",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_get_share_code.js
