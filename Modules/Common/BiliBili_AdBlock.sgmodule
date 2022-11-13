@@ -29,7 +29,7 @@ URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/(Flash|Lis
 
 [Script]
 # ～ BiliBili_哔哩哔哩_启动时开启直连模式[自行启用]@ddgksf2013
-#http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain script-path=https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Script/bilibili_startup_direct.js, requires-body=true
+//#http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain script-path=https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Script/bilibili_startup_direct.js, requires-body=true
 # ～ BiliBili_哔哩哔哩_繁体CC字幕转中文简体[自行启用]@ddgksf2013
 #http-response ^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$ script-path=https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Script/bilibili_cc.js, requires-body=true
 # ～ BiliBili_哔哩哔哩_屏蔽首页右上活动[卸载重装]@ddgksf2013
