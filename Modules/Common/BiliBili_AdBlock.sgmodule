@@ -5,6 +5,7 @@
 #墨鱼手记的圈X转换而来
 #UpdateTime        2022-11-05
 #ConfigVersion     V0.0.84
+#ScriptURL         https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Rewrite/AdBlock/Bilibili.conf
 
 [Rule]
 # ～ BiliBili_哔哩哔哩_屏蔽广告浮窗@ddgksf2013
