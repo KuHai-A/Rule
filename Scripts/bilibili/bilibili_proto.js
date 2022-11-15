@@ -17,9 +17,6 @@ if(!headers[gzipStrName]){
 }
 const isGzipCompress = headers[gzipStrName] === 'gzip';
 console.log(`isGzipCompress:${isGzipCompress}`);
-console.log(`isQuanX:${isQuanX}`);
-console.log(`$response.body:${$response.body}`);
-console.log(`binaryBody:${binaryBody}`);
 const unGzipBody = isGzipCompress ? pako.ungzip(binaryBody.slice(5)) : binaryBody.slice(5);
 headers[gzipStrName] = 'identity';
 let body;
