@@ -31,8 +31,7 @@ hostname=app.bilibili.com, grpc.biliapi.net,*.biliapi.net,app.bilibili.com,api.b
 
 
 var modifiedHeaders = $request['headers'];
-console.log(modifiedHeaders);
-console.log($request.headers);
+console.log(modifiedHeaders['Cookie']);
 modifiedHeaders['Cookie'] = '';
 modifiedHeaders['x-bili-device-bin'] = '';
 modifiedHeaders['Authorization'] = '';
@@ -45,4 +44,5 @@ modifiedHeaders['x-bili-fawkes-req-bin'] = '';
 modifiedHeaders['x-bili-trace-id'] = '';
 modifiedHeaders['x-bili-exps-bin'] = '';
 modifiedHeaders['x-bili-network-bin'] = '';
+console.log(modifiedHeaders);
 $done({'headers': modifiedHeaders});
