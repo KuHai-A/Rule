@@ -1,0 +1,14 @@
+#!name=Bilibili Pro Crack
+#!desc=Bilibili大会员通用破解模板
+#!system=ios
+
+# 应用名称：Bilibili大会员通用破解模板
+# 软件版本：7.8.2
+# 解锁说明：解锁VIP番剧和影视
+# 更新时间：2022-12-03
+
+[Script]
+http-response ^http[s]?:\/\/((app|api)\.(\w{2,15})?\.(com|cn)).*player\.(v3|v2|v1).Play(URL|View).*$ script-path=https://raw.githubusercontent.com/KuHai-A/Rule/main/Scripts/bilibili/BilibiliProCrack.js
+
+[MITM]
+hostname = %APPEND% app.bilibili.com, grpc.biliapi.net,*.biliapi.net,app.bilibili.com,api.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,dataflow.biliapi.com,124.239.240.*,101.89.57.66, 218.94.210.66,240e:b1:9801:206:11:0:0:*
