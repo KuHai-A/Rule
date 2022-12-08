@@ -13,7 +13,7 @@
 # ～ WeiboLite_微博国际版_sdkad@ddgksf2013
 https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-dict.json"
 # ～ WeiboLite_微博国际版_屏蔽search_suggest@ddgksf2013 
-# URL-REGEX,^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/page\/get_search_suggest data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-dict.json"
+# ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/page\/get_search_suggest data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-dict.json"
 # ～ WeiboLite_微博国际版_屏蔽searching_info@ddgksf2013
 ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*user&a=get_searching_info data="https://github.com/ddgksf2013/Scripts/raw/master/weibo_search_info.json"
 # ～ WeiboLite_微博国际版_屏蔽开屏广告@ddgksf2013 
