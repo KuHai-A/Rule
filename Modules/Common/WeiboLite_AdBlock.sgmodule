@@ -7,17 +7,17 @@
 #ScriptURL         https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/WeiboLite.conf
 
 [Map Local]
-URL-REGEX,^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php\?a=hot_search_users data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-dict.json"
+^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php\?a=hot_search_users data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-dict.json"
 # ～ WeiboLite_微博国际版_热推荐@ddgksf2013
-URL-REGEX,^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/ad\/weibointl\? data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/ad\/weibointl\? data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-dict.json"
 # ～ WeiboLite_微博国际版_sdkad@ddgksf2013
-URL-REGEX,https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-dict.json"
+https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-dict.json"
 # ～ WeiboLite_微博国际版_屏蔽search_suggest@ddgksf2013 
 # URL-REGEX,^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/page\/get_search_suggest data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-dict.json"
 # ～ WeiboLite_微博国际版_屏蔽searching_info@ddgksf2013
 ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*user&a=get_searching_info data="https://github.com/ddgksf2013/Scripts/raw/master/weibo_search_info.json"
 # ～ WeiboLite_微博国际版_屏蔽开屏广告@ddgksf2013 
-URL-REGEX,^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*ads data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-dict.json"
+^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*ads data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-dict.json"
 
 [Script]
 # ～ WeiboLite_微博国际版_屏蔽search_topic@ddgksf2013 
