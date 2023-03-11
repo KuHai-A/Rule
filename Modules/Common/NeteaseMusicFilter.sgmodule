@@ -1,0 +1,6 @@
+#!name=Netease Music Filter
+#!desc=网易云音乐分流
+#!system=ios
+
+[Rule]
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list,Netease Music
