@@ -1,0 +1,13 @@
+#!name=Remove WeiboLite Ads
+#!desc=12306去广告
+#!system=ios
+
+#墨鱼手记的圈X转换而来
+#UpdateTime        2023-02-22
+#ScriptURL         https://github.com/ddgksf2013/Scripts/blob/master/12306.js
+
+[Script]
+http-request ^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Scripts/raw/master/12306.js
+
+[MITM]
+hostname = %APPEND% ad.12306.cn
