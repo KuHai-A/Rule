@@ -1,3 +1,8 @@
+# 墨鱼手记公众号获取
+# 更新时间：2022-11-12
+# URL：https://gist.githubusercontent.com/ddgksf2013/baacafc36c685a0af41e500d9a4773ab/raw/Netease.list
+# 说明：2023-12-27，已转为使用本地 Sub Store，不再通过此raw获取，目前仅留存备用
+
 网易云1 = http, os.tencentcdn.net,25000, over-tls=false, tfo=false, udp-relay=false
 网易云2 = http, pc.tencentcdn.net,35000, over-tls=false, tfo=false, udp-relay=false
 网易云3 = http, 155.248.169.205,70, over-tls=false, tfo=false, udp-relay=false
