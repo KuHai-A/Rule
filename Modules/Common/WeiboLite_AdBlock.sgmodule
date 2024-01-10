@@ -7,6 +7,9 @@
 #Version           V2.0.93
 #ScriptURL         https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Weibo.conf
 
+[Rule]
+DOMAIN, sdkapp.uve.weibo.com, DIRECT
+
 [URL Rewrite]
 # > 微博_应用内弹窗广告@ddgksf2013
 ^https?:\/\/(preload-click|preload-impression)\.uve\.weibo\.com\/(interface\/wbpullad\/wbpullad_click\.php|wbapplua\/get_wbpullad_log\.lua) - reject
