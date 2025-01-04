@@ -1,25 +1,43 @@
-#!name=百度网盘SVIP+去广告
-#!desc=百度网盘SVIP+去广告
+#!name=百度网盘去广告和视频倍速
+#!desc=百度网盘去广告和视频倍速
 #!system=ios
 
 #墨鱼手记的圈X转换而来
-#UpdateTime        2023-07-30
+#UpdateTime        2024-11-29
 #Version           V0.0
-#ScriptURL         https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js
+#去广告ScriptURL    https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js
+#视频倍速ScriptURL  https://gist.githubusercontent.com/ddgksf2013/0b2145e7362964c77af57a0e3402fe21/raw/BaiduPanSpeedBoost.conf
 
 [Map Local]
+# > 百度网盘_启动弹窗@ddgksf2013
+^https?:\/\/.*baidu\.com\/rest\/.*\/membership\/proxy\/guide data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-200.txt"
 # > 百度网盘_设置信息流@ddgksf2013
 ^https?:\/\/pan\.baidu\.com\/act\/v\d\/(bchannel|welfare)\/list data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-200.txt"
 # > 百度网盘_通用广告@ddgksf2013
 ^https?:\/\/pan\.baidu\.com\/rest\/.*\/pcs\/ad data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-200.txt"
 # > 百度网盘_活动推广@ddgksf2013
 ^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-200.txt"
+# > 百度网盘_热搜list@ddgksf2013
+^https:\/\/pan\.baidu\.com\/feed\/hotlist data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-200.txt"
+# > 百度网盘_活动推广@ddgksf2013
+^https?:\/\/.*zhangyuyidong\.cn\/api\/zysdk data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-200.txt"
+# > 百度网盘_搜索填词@ddgksf2013
+^https:\/\/pan\.baidu\.com\/queryintent\/queryhint data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-200.txt"
+# > 百度网盘_金币乐园@ddgksf2013
+^https:\/\/pan\.baidu\.com\/coins\/center\/notice data="https://raw.githubusercontent.com/KuHai-A/Rule/main/Reject/reject-200.txt"
 
 [Script]
 # > 百度网盘_开屏广告@ddgksf2013
-http-response ^https?:\/\/pan\.baidu\.com\/api\/getsyscfg script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js, requires-body=1
-# > 百度网盘_会员权益@ddgksf2013
-http-response ^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user\?app_id script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js, requires-body=1
+http-response ^https?:\/\/pan\.baidu\.com\/api\/getsyscfg script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js, requires-body=1
+# > 百度网盘_广告推广@ddgksf2013
+http-response ^https?:\/\/afd\.baidu\.com\/afd\/entry script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js, requires-body=1
+# > 百度网盘_游戏广告@ddgksf2013
+http-response ^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user\?method=gamecenter script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js, requires-body=1
+# > 百度网盘_首页信息流@ddgksf2013
+http-response ^https:\/\/pan\.baidu\.com\/feed\/cardinfos script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js, requires-body=1
+# > 百度网盘_视频倍速播放@ddgksf2013
+http-request ^https:\/\/pan\.baidu\.com\/api\/streaming\?app_id=\d+&type=M3U8_HQ_1080 script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js
+http-response ^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js, requires-body=1
 
 [MITM]
-hostname = %APPEND% pan.baidu.com
+hostname = %APPEND% pan.baidu.com, afd.baidu.com
