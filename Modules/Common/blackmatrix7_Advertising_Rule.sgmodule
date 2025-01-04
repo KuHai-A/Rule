@@ -1,7 +1,10 @@
 #!name=blackmatrix7去广告Rule
 #!desc=https://github.com/blackmatrix7/ios_rule_script（blackmatrix7的去广告规则，请配合对应MIMT使用）
+#RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Direct/Direct.list,DIRECT
+#RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdGuardSDNSFilter/Direct/Direct.list,DIRECT
+#RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list,REJECT
 
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdGuardSDNSFilter/Direct/Direct.list,DIRECT
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Direct/Direct.list,DIRECT
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising_All.list,REJECT
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/EasyPrivacy/EasyPrivacy_All_No_Resolve.list,REJECT
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BlockHttpDNS/BlockHttpDNS.list,REJECT
