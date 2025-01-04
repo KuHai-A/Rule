@@ -1,0 +1,15 @@
+#!name=百度网盘倍速播放
+#!desc=百度网盘倍速播放
+#!system=ios
+
+#墨鱼手记的圈X转换而来
+#UpdateTime        2024-11-29
+#Version           V0.0
+#ScriptURL         https://gist.githubusercontent.com/ddgksf2013/0b2145e7362964c77af57a0e3402fe21/raw/BaiduPanSpeedBoost.conf
+
+[Script]
+http-request ^https:\/\/pan\.baidu\.com\/api\/streaming\?app_id=\d+&type=M3U8_HQ_1080 script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js
+http-response ^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js, requires-body=1
+
+[MITM]
+hostname = %APPEND% pan.baidu.com, afd.baidu.com
