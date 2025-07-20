@@ -1,6 +1,0 @@
-#!name=Netease Music Filter
-#!desc=网易云音乐分流
-#!system=ios
-
-[Rule]
-RULE-SET,https://raw.githubusercontent.com/KuHai-A/Rule/main/Rule/NeteaseMusic.list,Netease Music
